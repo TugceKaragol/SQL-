@@ -39,7 +39,7 @@ WHERE customer_id = ANY
 	SELECT customer_id FROM payment
 	GROUP BY customer_id
 	ORDER BY SUM(amount) DESC
-	LIMIT 5
+	LIMIT 1
 	
 )
 
